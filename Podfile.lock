@@ -1,0 +1,46 @@
+PODS:
+  - ACProgressHUD-Swift (1.2)
+  - Alamofire (4.4.0)
+  - Firebase (3.17.0):
+    - Firebase/Core (= 3.17.0)
+  - Firebase/Core (3.17.0):
+    - FirebaseAnalytics (= 3.9.0)
+    - FirebaseCore (= 3.6.0)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - ObjectMapper (2.2.6)
+  - SwiftLocation (2.0.7)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - ACProgressHUD-Swift
+  - Alamofire
+  - Firebase
+  - ObjectMapper
+  - SwiftLocation
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ACProgressHUD-Swift: a08e699b2d8b3f3528d77c021ad6a326bc16f76d
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  SwiftLocation: 1fe2e15a5812e961496e82eeaca71d03e829e47a
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: e7ce3e71dccd3620e236892f045fff88dbcce9cc
+
+COCOAPODS: 1.2.1
