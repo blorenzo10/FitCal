@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>Pods-FitCal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>StepProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +52,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00103D6C821BE85971C563025527BA5D</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D7A8C6293B03D7E6CB25D96FB17FAF1</key>
+		<key>169D39785289A0E4D574A57C952085B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>218989205D656CB8958C9D4D94705F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>603C9831E7DC0490CAF452C57C30B7C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7774A2951B0E0979717CA294CC38D89D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4C32034CA8B73DFC93C52331A34E80F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>EC693FAB1021B3846F7034F8AA954D57</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB7F779778A0E807E55AB480D1D7C403</key>
 		<dict>
 			<key>primary</key>
 			<true/>

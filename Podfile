@@ -7,5 +7,9 @@ target 'FitCal' do
   pod 'SwiftyJSON'
   pod 'SwiftLocation'
   pod 'ACProgressHUD-Swift'
-  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'StepProgressBar'
 end

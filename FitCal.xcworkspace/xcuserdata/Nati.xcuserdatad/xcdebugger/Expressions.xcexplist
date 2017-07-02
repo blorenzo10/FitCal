@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SignUpViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():SignUpViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destination">
+            </PersistentString>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetGoalViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():SetGoalViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LogInViewController.(signIn(Any) -&gt; ()).(closure #1).(closure #1):LogInViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "value[&quot;Age&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
