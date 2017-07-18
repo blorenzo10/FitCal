@@ -1,6 +1,7 @@
 PODS:
   - ACProgressHUD-Swift (1.2)
   - Alamofire (4.4.0)
+  - EFCountingLabel (1.0.1)
   - Firebase/Auth (3.17.0):
     - Firebase/Core
     - FirebaseAuth (= 3.1.1)
@@ -41,7 +42,13 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - GTProgressBar (0.1.3)
+  - IHKeyboardAvoiding (3.7)
+  - IQKeyboardManager (4.0.9)
   - ObjectMapper (2.2.6)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - StepProgressBar (0.1.4)
   - SwiftLocation (2.0.7)
   - SwiftyJSON (3.1.4)
@@ -49,11 +56,16 @@ PODS:
 DEPENDENCIES:
   - ACProgressHUD-Swift
   - Alamofire
+  - EFCountingLabel
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - GTProgressBar
+  - IHKeyboardAvoiding
+  - IQKeyboardManager
   - ObjectMapper
+  - SDWebImage (~> 3.8)
   - StepProgressBar
   - SwiftLocation
   - SwiftyJSON
@@ -61,6 +73,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ACProgressHUD-Swift: a08e699b2d8b3f3528d77c021ad6a326bc16f76d
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  EFCountingLabel: fcdf2193bb02ee77e0e0e8f72a1eb5931c54aa41
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
@@ -70,11 +83,15 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  GTProgressBar: d130b36db4d0af881795aa4e5648e6dccd85b8fa
+  IHKeyboardAvoiding: 4c852fae85667469307678c65f14f5cac8a7be92
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   StepProgressBar: 0dd24d84add0c914aea42848737416583eb95db9
   SwiftLocation: 1fe2e15a5812e961496e82eeaca71d03e829e47a
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 6ccb0f180d3574f5a096b221cb9ad3af251849c2
+PODFILE CHECKSUM: 95724613db785b26476c30a1bc5c57242e008c31
 
 COCOAPODS: 1.2.1

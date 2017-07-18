@@ -19,6 +19,9 @@
 		453C4BCF1EFB16C900FF4616 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C4BCE1EFB16C900FF4616 /* LogInViewController.swift */; };
 		453C4BD21EFB1A2E00FF4616 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 453C4BD11EFB1A2E00FF4616 /* fontawesome-webfont.ttf */; };
 		453C4BD41EFB427100FF4616 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C4BD31EFB427100FF4616 /* SignUpViewController.swift */; };
+		455A0B8D1F16E832005BF6FD /* HistoricMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A0B8C1F16E832005BF6FD /* HistoricMealCell.swift */; };
+		455A0B901F16EB27005BF6FD /* HistoricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A0B8F1F16EB27005BF6FD /* HistoricViewController.swift */; };
+		457E4D151F0C8BDD00B5A111 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E4D141F0C8BDD00B5A111 /* UIViewControllerUtils.swift */; };
 		459801261EFB14230024B41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459801251EFB14230024B41B /* AppDelegate.swift */; };
 		459801281EFB14230024B41B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459801271EFB14230024B41B /* ViewController.swift */; };
 		4598012B1EFB14230024B41B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459801291EFB14230024B41B /* Main.storyboard */; };
@@ -26,14 +29,16 @@
 		459801301EFB14230024B41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4598012E1EFB14230024B41B /* LaunchScreen.storyboard */; };
 		45A3E9B51F03372500B8720F /* SetUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3E9B41F03372500B8720F /* SetUserProfileViewController.swift */; };
 		45A806421EFB4F46007ADA1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45A806411EFB4F46007ADA1C /* GoogleService-Info.plist */; };
+		45B354F51F0DE07100C383B6 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B354F41F0DE07100C383B6 /* Ingredient.swift */; };
+		45B354F71F0DE11D00C383B6 /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B354F61F0DE11D00C383B6 /* MealList.swift */; };
 		45C455371EFC9C2700497005 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C455361EFC9C2700497005 /* SetGoalViewController.swift */; };
 		45C455391EFC9E7200497005 /* SetGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C455381EFC9E7200497005 /* SetGoalCell.swift */; };
 		45D87CB91F0848B900E5795E /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87CB81F0848B900E5795E /* AddMealViewController.swift */; };
 		45D87CBB1F084EFB00E5795E /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87CBA1F084EFB00E5795E /* IngredientCell.swift */; };
-		45D87CBD1F08766A00E5795E /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87CBC1F08766A00E5795E /* AnimationUtils.swift */; };
+		45D87CBD1F08766A00E5795E /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87CBC1F08766A00E5795E /* UIViewUtils.swift */; };
 		45D87CBF1F08845D00E5795E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87CBE1F08845D00E5795E /* User.swift */; };
-		45FD876A1EFEDF5F0016088C /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD87691EFEDF5F0016088C /* SettingsManager.swift */; };
 		45FD876C1EFEE4A60016088C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD876B1EFEE4A60016088C /* ProfileViewController.swift */; };
+		45FF60631F0AF8F60069DB9E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF60621F0AF8F60069DB9E /* Utils.swift */; };
 		F0536901A3C014E5B3428475 /* Pods_FitCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A3F94BE643FE4A4175FB27 /* Pods_FitCal.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,9 @@
 		453C4BCE1EFB16C900FF4616 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		453C4BD11EFB1A2E00FF4616 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		453C4BD31EFB427100FF4616 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		455A0B8C1F16E832005BF6FD /* HistoricMealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricMealCell.swift; sourceTree = "<group>"; };
+		455A0B8F1F16EB27005BF6FD /* HistoricViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricViewController.swift; sourceTree = "<group>"; };
+		457E4D141F0C8BDD00B5A111 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
 		459801221EFB14230024B41B /* FitCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459801251EFB14230024B41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		459801271EFB14230024B41B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,14 +67,16 @@
 		459801311EFB14230024B41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A3E9B41F03372500B8720F /* SetUserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUserProfileViewController.swift; sourceTree = "<group>"; };
 		45A806411EFB4F46007ADA1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45B354F41F0DE07100C383B6 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		45B354F61F0DE11D00C383B6 /* MealList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
 		45C455361EFC9C2700497005 /* SetGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
 		45C455381EFC9E7200497005 /* SetGoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGoalCell.swift; sourceTree = "<group>"; };
 		45D87CB81F0848B900E5795E /* AddMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		45D87CBA1F084EFB00E5795E /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
-		45D87CBC1F08766A00E5795E /* AnimationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationUtils.swift; sourceTree = "<group>"; };
+		45D87CBC1F08766A00E5795E /* UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
 		45D87CBE1F08845D00E5795E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		45FD87691EFEDF5F0016088C /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		45FD876B1EFEE4A60016088C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		45FF60621F0AF8F60069DB9E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7A6C6E74BA9D0BD091DE0142 /* Pods-FitCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitCal.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitCal/Pods-FitCal.release.xcconfig"; sourceTree = "<group>"; };
 		8553C21299E38F0DCAAD0765 /* Pods-FitCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitCal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitCal/Pods-FitCal.debug.xcconfig"; sourceTree = "<group>"; };
 		92A3F94BE643FE4A4175FB27 /* Pods_FitCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +108,9 @@
 				45267B781EFC8F180025E5AF /* Meal.swift */,
 				45267B7A1EFC90D90025E5AF /* MealManager.swift */,
 				4521A5111EFDB7940079662E /* Settings.swift */,
-				45FD87691EFEDF5F0016088C /* SettingsManager.swift */,
 				45D87CBE1F08845D00E5795E /* User.swift */,
+				45B354F41F0DE07100C383B6 /* Ingredient.swift */,
+				45B354F61F0DE11D00C383B6 /* MealList.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 				45C455381EFC9E7200497005 /* SetGoalCell.swift */,
 				4521A5151EFDBA9A0079662E /* SetActivityLevelCell.swift */,
 				45D87CBA1F084EFB00E5795E /* IngredientCell.swift */,
+				455A0B8C1F16E832005BF6FD /* HistoricMealCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -118,10 +130,11 @@
 		453C4BCD1EFB15BF00FF4616 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				455A0B8E1F16EAFA005BF6FD /* Historic */,
+				454CD6961F114B65006933DB /* Profile */,
+				455B0BF31F09D21D009291FB /* SignIn */,
 				45D87CB71F08481500E5795E /* Daily List */,
 				45A3E9B61F033A8F00B8720F /* SignUp */,
-				453C4BCE1EFB16C900FF4616 /* LogInViewController.swift */,
-				45FD876B1EFEE4A60016088C /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -138,9 +151,35 @@
 			isa = PBXGroup;
 			children = (
 				4524F92C1F0482770012B568 /* CaloriesUtils.swift */,
-				45D87CBC1F08766A00E5795E /* AnimationUtils.swift */,
+				45D87CBC1F08766A00E5795E /* UIViewUtils.swift */,
+				45FF60621F0AF8F60069DB9E /* Utils.swift */,
+				457E4D141F0C8BDD00B5A111 /* UIViewControllerUtils.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		454CD6961F114B65006933DB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				45FD876B1EFEE4A60016088C /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		455A0B8E1F16EAFA005BF6FD /* Historic */ = {
+			isa = PBXGroup;
+			children = (
+				455A0B8F1F16EB27005BF6FD /* HistoricViewController.swift */,
+			);
+			name = Historic;
+			sourceTree = "<group>";
+		};
+		455B0BF31F09D21D009291FB /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				453C4BCE1EFB16C900FF4616 /* LogInViewController.swift */,
+			);
+			name = SignIn;
 			sourceTree = "<group>";
 		};
 		459801191EFB14230024B41B = {
@@ -336,8 +375,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B354F71F0DE11D00C383B6 /* MealList.swift in Sources */,
 				45D87CBB1F084EFB00E5795E /* IngredientCell.swift in Sources */,
 				45267B771EFC8E2F0025E5AF /* DailyListViewController.swift in Sources */,
+				455A0B901F16EB27005BF6FD /* HistoricViewController.swift in Sources */,
 				45C455391EFC9E7200497005 /* SetGoalCell.swift in Sources */,
 				45D87CB91F0848B900E5795E /* AddMealViewController.swift in Sources */,
 				4521A5181EFDCBF90079662E /* SetUserInfoViewController.swift in Sources */,
@@ -348,16 +389,19 @@
 				45FD876C1EFEE4A60016088C /* ProfileViewController.swift in Sources */,
 				45D87CBF1F08845D00E5795E /* User.swift in Sources */,
 				459801261EFB14230024B41B /* AppDelegate.swift in Sources */,
+				45B354F51F0DE07100C383B6 /* Ingredient.swift in Sources */,
+				457E4D151F0C8BDD00B5A111 /* UIViewControllerUtils.swift in Sources */,
 				45267B751EFC8CFB0025E5AF /* DailyListCell.swift in Sources */,
 				453C4BD41EFB427100FF4616 /* SignUpViewController.swift in Sources */,
 				4521A5161EFDBA9A0079662E /* SetActivityLevelCell.swift in Sources */,
+				45FF60631F0AF8F60069DB9E /* Utils.swift in Sources */,
 				45267B7B1EFC90D90025E5AF /* MealManager.swift in Sources */,
 				45A3E9B51F03372500B8720F /* SetUserProfileViewController.swift in Sources */,
-				45FD876A1EFEDF5F0016088C /* SettingsManager.swift in Sources */,
-				45D87CBD1F08766A00E5795E /* AnimationUtils.swift in Sources */,
+				45D87CBD1F08766A00E5795E /* UIViewUtils.swift in Sources */,
 				45C455371EFC9C2700497005 /* SetGoalViewController.swift in Sources */,
 				4521A5121EFDB7940079662E /* Settings.swift in Sources */,
 				453C4BCF1EFB16C900FF4616 /* LogInViewController.swift in Sources */,
+				455A0B8D1F16E832005BF6FD /* HistoricMealCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

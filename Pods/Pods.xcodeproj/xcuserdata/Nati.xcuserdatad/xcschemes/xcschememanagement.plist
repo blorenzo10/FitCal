@@ -14,12 +14,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EFCountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IHKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -30,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>Pods-FitCal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,27 +77,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>033B2F5EFC98402794E5FA4A2E42BD9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F49E5F3134572D4E9ADCBDE301DF7F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>169D39785289A0E4D574A57C952085B7</key>
+		<key>12217CB20DC74C6994732455142E2B37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>218989205D656CB8958C9D4D94705F54</key>
+		<key>3DE80436174877000D7A7056DFE1DE4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>603C9831E7DC0490CAF452C57C30B7C9</key>
+		<key>5406CAB0915C136BB32085C2B365A3AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7774A2951B0E0979717CA294CC38D89D</key>
+		<key>67D0AA70D554706DA0B72DF7A6CF6B16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69784DB4D922BE4B764EAAB2DBB8F471</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>95466AC8E9950CD91F3DD0D9DF15D9EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C36CB2CB977A4E7D954935096D00A1ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>

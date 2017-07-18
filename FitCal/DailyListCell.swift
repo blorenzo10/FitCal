@@ -10,6 +10,10 @@ import UIKit
 
 class DailyListCell: UITableViewCell {
 
+    @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var mealCalLabel: UILabel!
+    @IBOutlet weak var mealMacroLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

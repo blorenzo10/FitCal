@@ -15,36 +15,24 @@ enum MealType: String {
     case Snack = "Snack"
 }
 
-class Meal: NSObject, NSCoding {
+class Meal {
     
+    var id: String
     var name: String
     var calories: Int
-    var portion: Int
-    var type: MealType
+    var prot: Double
+    var carb: Double
+    var fat: Double
+    var ingredients: [Ingredient]?
     
-    init(_ name: String, _ calories: Int, _ portion: Int, _ type: MealType) {
+    
+    init(_ id: String, _ name: String, _ calories: Int, _ prot: Double, _ carb: Double, _ fat: Double) {
+        self.id = id
         self.name = name
         self.calories = calories
-        self.portion = portion
-        self.type = type
-    }
-    
-    
-    required convenience init(coder aDecoder: NSCoder) {
-        let name = aDecoder.decodeObject(forKey: "name") as! String
-        let calories = aDecoder.decodeObject(forKey: "calories") as! Int
-        let portion = aDecoder.decodeObject(forKey: "portion") as! Int
-        let typeStr = aDecoder.decodeObject(forKey: "type") as! String
-        
-        self.init(name,calories,portion,MealType(rawValue: typeStr)!)
-    }
-    
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(self.name, forKey: "name")
-        aCoder.encode(self.calories, forKey: "calories")
-        aCoder.encode(self.portion, forKey: "portion")
-        aCoder.encode(self.type.rawValue, forKey: "type")
-
+        self.prot = prot
+        self.carb = carb
+        self.fat = fat
     }
 
 }

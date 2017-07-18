@@ -21,40 +21,26 @@ enum ActivityLevel: String {
     case veryActive = "Very Active"
 }
 
-class Settings: NSObject, NSCoding {
+class Settings {
     
     var goal: Goal?
     var activityLevel: ActivityLevel?
     var age: Int?
     var tall: Int?
     var weight: Int?
+    var calories: Int?
     
-    override init () {}
+    static let instance: Settings = Settings()
     
-    init (_ goal: Goal, _ activityLevel: ActivityLevel, _ age: Int, _ tall: Int, _ weight: Int) {
+    private init () {}
+    
+    init (_ goal: Goal, _ activityLevel: ActivityLevel, _ age: Int, _ tall: Int, _ weight: Int, _ calories: Int) {
         self.goal = goal
         self.activityLevel = activityLevel
         self.age = age
         self.tall = tall
         self.weight = weight
+        self.calories = calories
     }
     
-    required convenience init(coder aDecoder: NSCoder) {
-        let goal = aDecoder.decodeObject(forKey: "goal") as! String
-        let activityLevel = aDecoder.decodeObject(forKey: "activityLevel") as! String
-        let age = aDecoder.decodeObject(forKey: "age") as! Int
-        let tall = aDecoder.decodeObject(forKey: "tall") as! Int
-        let weight = aDecoder.decodeObject(forKey: "weight") as! Int
-
-        self.init(Goal(rawValue: goal)!,ActivityLevel(rawValue: activityLevel)!,age,tall,weight)
-    }
-    
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(self.goal?.rawValue, forKey: "goal")
-        aCoder.encode(self.activityLevel?.rawValue, forKey: "activityLevel")
-        aCoder.encode(self.age, forKey: "age")
-        aCoder.encode(self.tall, forKey: "tall")
-        aCoder.encode(self.weight, forKey: "weight")
-        
-    }
 }

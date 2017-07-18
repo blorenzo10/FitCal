@@ -3,6 +3,50 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "LogInViewController.(signIn(Any) -&gt; ()).(closure #1).(closure #1).(closure #1):LogInViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentDate">
+            </PersistentString>
+            <PersistentString
+               value = "MealList.instance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetUserInfoViewController.calculateCalories(Any) -&gt; ():SetUserInfoViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DailyListViewController.(tableView(UITableView, editActionsForRowAt : IndexPath) -&gt; [UITableViewRowAction]?).(closure #1):DailyListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "editActionsForRowAt.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetGoalViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():SetGoalViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "specialized LogInViewController.(signIn(Any) -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1):LogInViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "day as! String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HistoricViewController.viewDidLoad() -&gt; ():HistoricViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.viewDidLoad() -&gt; ():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.instance.urlImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "SignUpViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():SignUpViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -14,15 +58,130 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "SetGoalViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():SetGoalViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "LogInViewController.(signIn(Any) -&gt; ()).(closure #1).(closure #1):LogInViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "value[&quot;Age&quot;]">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HistoricViewController.numberOfSections(in : UITableView) -&gt; Int:HistoricViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SetUserProfileViewController.imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo : [String : Any]) -&gt; ():SetUserProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SocialViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:SocialViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SocialViewController.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():SocialViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.instance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DailyListViewController.setMacroInfo([Double]) -&gt; ():DailyListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(macroInfo[0]/totalCal!)*100">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SocialViewController.(viewDidLoad() -&gt; ()).(closure #1):SocialViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userInfo[&quot;UserInfo&quot;] as! NSDictionary">
+            </PersistentString>
+            <PersistentString
+               value = "User.instance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "User.addHistoryMeal(String, Meal) -&gt; ():User.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.(viewDidLoad() -&gt; ()).(closure #1):ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "error.debugDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetUserProfileViewController.(finishSignUp(Any) -&gt; ()).(closure #1):SetUserProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgRef.fullPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetUserProfileViewController.finishSignUp(Any) -&gt; ():SetUserProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.instance.urlImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DailyListViewController.viewWillAppear(Bool) -&gt; ():DailyListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.instance.mealHistory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DailyListViewController.notifyMealAdded([String : Any], String) -&gt; ():DailyListViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SocialViewController.follow(UIButton) -&gt; ():SocialViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath?.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HistoricViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:HistoricViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.historicList.count">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LogInViewController.(signIn(Any) -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1):LogInViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "day as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DailyListViewController.getCaloriesPercentage() -&gt; Double:DailyListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.totalCaloriesLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LogInViewController.createMeal(String, NSDictionary) -&gt; Meal?:LogInViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SocialViewController.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:SocialViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

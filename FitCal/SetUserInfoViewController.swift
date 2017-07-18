@@ -69,6 +69,11 @@ class SetUserInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             // Calculate calories
             self.calories = CaloriesUtils().calculateDailyCalories(self.goal, self.activity, age, tall, weight, sex: Sex(rawValue: self.sex)!)
             
+            Settings.instance.activityLevel = self.activity
+            Settings.instance.age = age
+            Settings.instance.tall = tall
+            Settings.instance.weight = weight
+            Settings.instance.goal = self.goal
             
             performSegue(withIdentifier: "setProfile", sender: self)
         }

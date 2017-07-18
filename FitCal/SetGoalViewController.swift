@@ -72,14 +72,7 @@ class SetGoalViewController: UIViewController, UITableViewDataSource, UITableVie
         
         self.goal = Goal(rawValue: cell.titleLabel.text!)
         
-//        var ref: FIRDatabaseReference!
-//        ref = FIRDatabase.database().reference()
-//        
-//        let data: [String: Any] = ["Goal" : cell.titleLabel.text!]
-//        
-//        ref.child("Users").child(self.uid).child("UserInfo").updateChildValues(data)
 
-        
         self.performSegue(withIdentifier: "setActivityLevel", sender: self)
     }
     

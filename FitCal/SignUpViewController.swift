@@ -54,6 +54,7 @@ class SignUpViewController: UIViewController {
                         } else {
                             
                             self.uid = user?.uid
+                            User.instance.uid = user?.uid
                             
                             var ref: FIRDatabaseReference!
                             ref = FIRDatabase.database().reference()
@@ -63,6 +64,8 @@ class SignUpViewController: UIViewController {
                             
                             ref.child("Users").child((user?.uid)!).child("UserInfo").setValue(data)
                             
+                            User.instance.firstName = self.firstNameLabel.text!
+                            User.instance.lastName = self.lastNameLabel.text!
                             
                             self.performSegue(withIdentifier: "setGoal", sender: self)
                         }
@@ -116,5 +119,7 @@ class SignUpViewController: UIViewController {
         
     }
  
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

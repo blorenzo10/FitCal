@@ -85,14 +85,7 @@ class SetActivityLevelViewController: UIViewController, UITableViewDataSource, U
         cell.titleLabel.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0)
         
         self.activity = ActivityLevel(rawValue: cell.titleLabel!.text!)
-        
-//        var ref: FIRDatabaseReference!
-//        ref = FIRDatabase.database().reference()
-//        
-//        let data: [String: Any] = ["ActivityLevel" : cell.titleLabel.text!]
-//        
-//        ref.child("Users").child(self.uid).child("UserInfo").updateChildValues(data)
-        
+
         self.performSegue(withIdentifier: "setUserInfo", sender: self)
     }
     

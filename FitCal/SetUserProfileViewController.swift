@@ -16,8 +16,12 @@ class SetUserProfileViewController: UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var progressStep: StepProgressBar!
     @IBOutlet weak var caloriesNumTextField: UITextField!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var finishSignUpButton: UIButton!
+    @IBOutlet weak var selectImageButton: UIButton!
+    @IBOutlet weak var takeImageButton: UIButton!
     
     let picker = UIImagePickerController()
+    let takeImagePicker = UIImagePickerController()
     
     var uid: String!
     var calories: Int!
@@ -25,17 +29,28 @@ class SetUserProfileViewController: UIViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let pictureImage = UIImage(named: "PictureIcon")
+        self.selectImageButton.setImage(pictureImage, for: .normal)
+        
+        let cameraImage = UIImage(named: "CameraIcon")
+        self.takeImageButton.setImage(cameraImage, for: .normal)
+        
+        self.finishSignUpButton.isHidden = true
+        
         self.progressStep.stepsCount = 4
         self.progressStep.next()
         self.progressStep.next()
         self.progressStep.next()
         
         self.picker.delegate = self
+        self.takeImagePicker.delegate = self
         
         self.profileImage.layer.masksToBounds = true
         self.profileImage.layer.cornerRadius = self.profileImage.frame.width / 2
         
         self.caloriesNumTextField.text = String(self.calories)
+        
+        Settings.instance.calories = self.calories
 
     }
 
@@ -57,11 +72,13 @@ class SetUserProfileViewController: UIViewController, UIImagePickerControllerDel
             imgRef.put(imageData, metadata: nil) {	metadata,error in
                 if error != nil {
                     self.showError(message: (error?.localizedDescription)!)
-                } else {
+                } else { 
                     var ref: FIRDatabaseReference!
                     ref = FIRDatabase.database().reference()
                     let data: [String: Any] = ["Calories": self.calories]
                     ref.child("Users").child(self.uid).child("UserInfo").updateChildValues(data)
+                    
+                    User.instance.urlImage = metadata?.downloadURL()
                     
                     progressHUD.hideHUD()
                     self.performSegue(withIdentifier: "showDailyList", sender: self)
@@ -71,6 +88,11 @@ class SetUserProfileViewController: UIViewController, UIImagePickerControllerDel
         // --
     }
     
+    @IBAction func takeImage(_ sender: Any) {
+        self.takeImagePicker.sourceType = .camera
+        self.takeImagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .camera)!
+        present(takeImagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func selectImage(_ sender: Any) {
         self.picker.allowsEditing = false
@@ -84,10 +106,25 @@ class SetUserProfileViewController: UIViewController, UIImagePickerControllerDel
         dismiss(animated: true, completion: nil)
     }
     
+    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+    }
+
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        
+        if(picker.sourceType == .camera) {
+            UIImageWriteToSavedPhotosAlbum(chosenImage, self,#selector(image(_:didFinishSavingWithError:contextInfo:)),nil)
+        } else {
+        
+        }
+        
         self.profileImage.image = chosenImage
+        
+        self.finishSignUpButton.isHidden = false
         
         dismiss(animated:true, completion: nil)
     }

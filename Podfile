@@ -12,4 +12,9 @@ target 'FitCal' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'StepProgressBar'
+  pod 'GTProgressBar'
+  pod 'IHKeyboardAvoiding'
+  pod 'IQKeyboardManager'
+  pod 'EFCountingLabel'
+  pod 'SDWebImage', '~>3.8'
 end

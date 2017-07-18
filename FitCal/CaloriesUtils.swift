@@ -56,5 +56,14 @@ class CaloriesUtils {
                 return calories
         }
     }
+    
+    func calculateMacronutrientsCalories(protein prot: Double, carbohydrates carb: Double, fats fat: Double) -> [Double] {
+        // Hidratos y proteinas 4 cal por gramo. Grasas 9 cal por gramo
+        let protCal = prot * 4
+        let carbCal = carb * 4
+        let fatCal = fat * 9
+        
+        return [protCal,carbCal,fatCal]
+    }
 
 }

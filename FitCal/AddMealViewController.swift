@@ -11,7 +11,7 @@ import Firebase
 
 protocol MealNotificacion {
     
-    func notifyMealAdded(_ data: [String:Any])
+    func notifyMealAdded(_ data: [String:Any], _ firebaseKey: String)
 }
 
 class AddMealViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
@@ -66,24 +66,33 @@ class AddMealViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             var ref: FIRDatabaseReference!
             ref = FIRDatabase.database().reference()
             
+            var currentDate = Utils().getCurrentDate()
+            currentDate = currentDate.replacingOccurrences(of: "/", with: "-")
+            
+            let key = ref.child("Users").child(User.instance.uid!).child("Meals").child(currentDate).childByAutoId().key
             
             let name = self.nameTextField.text!
             let calories = Int(self.caloriesTextField.text!)
-            let prot = Int(self.protTextField.text!)
-            let carb = Int(self.carbTextField.text!)
-            let fat = Int(self.fatTextField.text!)
+            let prot = Double(self.protTextField.text!)
+            let carb = Double(self.carbTextField.text!)
+            let fat = Double(self.fatTextField.text!)
+            
+            var ingredients: [String:Int] = [:]
+            for ingredient in self.ingredientsData {
+                ingredients[ingredient.0] = ingredient.1
+            }
             
             let data: [String: Any] = ["Name": name,
                                        "Calories": calories!,
                                        "Prot" : prot!,
                                        "Carb" : carb!,
                                        "Fat" : fat!,
-                                       "Ingredients": self.ingredientsData]
+                                       "Ingredients": ingredients]
             
-            ref.child("Users").child(User.instance.uid!).child("Meals").updateChildValues(data)
+            ref.child("Users").child(User.instance.uid!).child("Meals").child(currentDate).child(key).updateChildValues(data)
+ 
             
-            self.delegate?.notifyMealAdded(data)
-            
+            self.delegate?.notifyMealAdded(data,key)
             dismiss(animated: true, completion: nil)
         }
     }
@@ -131,14 +140,12 @@ class AddMealViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as? IngredientCell {
-            let quantityStr = String(self.ingredientsData[indexPath.row].1)
-            
-            cell.nameLabel.text = self.ingredientsData[indexPath.row].0
-            cell.quantityLabel.text = quantityStr
-            return cell
-        }
-        return IngredientCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! IngredientCell
+        let quantityStr = String(self.ingredientsData[indexPath.row].1)
+        
+        cell.nameLabel.text = self.ingredientsData[indexPath.row].0
+        cell.quantityLabel.text = quantityStr
+        return cell
     }
     // --
     
@@ -166,6 +173,9 @@ class AddMealViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             self.quantityData.append(i+1)
         }
     }
-
     // --
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
